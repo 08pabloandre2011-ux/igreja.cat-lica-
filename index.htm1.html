@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Um guia visual e moderno para conhecer a Igreja Católica, sua história, fé e missão.">
+<title>Igreja Católica | Fé, história e comunidade</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#f7f4ef;--muted:#c3c8d2;--gold:#e2c17d;--blue:#101b31;--glass:rgba(255,255,255,.095);--line:rgba(255,255,255,.19)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#0b1425;color:var(--ink);font-family:"DM Sans",sans-serif;line-height:1.65;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(ellipse at 80% 5%,#34496c 0,transparent 34%),radial-gradient(ellipse at 5% 55%,#28334e 0,transparent 34%),linear-gradient(145deg,#0b1425,#18243a 58%,#101827)}
+a{color:inherit;text-decoration:none}.wrap{width:min(1160px,calc(100% - 42px));margin:auto}
+.nav{position:sticky;top:14px;z-index:20;width:min(1160px,calc(100% - 32px));margin:14px auto -80px;padding:12px 18px;border:1px solid var(--line);border-radius:22px;background:rgba(15,26,45,.62);backdrop-filter:blur(22px) saturate(150%);-webkit-backdrop-filter:blur(22px) saturate(150%);box-shadow:0 12px 40px #0003;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-weight:700;letter-spacing:.12em;font-size:.82rem}.logo span{color:var(--gold)}.links{display:flex;gap:24px;font-size:.86rem;color:#e0e4eb}.links a:hover{color:var(--gold)}
+.hero{min-height:780px;display:grid;align-items:center;padding:150px 0 90px;position:relative}
+.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:44px}
+.kicker{color:var(--gold);font-size:.74rem;text-transform:uppercase;letter-spacing:.24em;font-weight:700}
+h1,h2,h3{font-family:"Playfair Display",Georgia,serif;font-weight:600;line-height:1.12}
+h1{font-size:clamp(3.2rem,7vw,6.2rem);margin:18px 0 22px;max-width:700px;letter-spacing:-.04em}
+h1 em{font-style:normal;color:var(--gold)}.intro{font-size:1.08rem;color:#d1d7e0;max-width:560px}
+.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}.btn{padding:13px 20px;border-radius:14px;font-weight:700;font-size:.88rem;border:1px solid var(--line);transition:.25s}.btn.primary{background:linear-gradient(135deg,#f0d99e,#b88b43);color:#1b2434;border:0;box-shadow:0 10px 30px #d4ad6540}.btn:hover{transform:translateY(-3px)}
+.visual{min-height:490px;position:relative;perspective:1000px;display:grid;place-items:center}
+.glow{position:absolute;width:330px;height:330px;border-radius:50%;background:#cba55a44;filter:blur(75px)}
+.church-card{width:min(100%,470px);height:430px;position:relative;overflow:hidden;border-radius:34px;border:1px solid #ffffff44;background:linear-gradient(145deg,#ffffff20,#ffffff08);backdrop-filter:blur(18px);box-shadow:0 35px 80px #0006;transform:rotateY(-8deg) rotateX(4deg);transition:.5s}
+.church-card:hover{transform:rotateY(0) rotateX(0) translateY(-7px)}
+.church-card img{width:100%;height:100%;object-fit:cover;opacity:.82;filter:saturate(.8)}
+.church-card:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#08111fe8,transparent 65%)}
+.card-caption{position:absolute;z-index:2;left:26px;bottom:24px}.card-caption small{color:var(--gold);letter-spacing:.17em;text-transform:uppercase}.card-caption h3{font-size:1.8rem;margin:7px 0}
+.float-chip{position:absolute;z-index:3;padding:14px 17px;border:1px solid #ffffff42;border-radius:18px;background:#ffffff19;backdrop-filter:blur(18px);box-shadow:0 15px 35px #0004;font-size:.82rem}.chip-one{top:42px;right:-10px}.chip-two{bottom:34px;left:-22px}
+.section{padding:92px 0}.section-head{max-width:720px;margin-bottom:34px}.section-head h2{font-size:clamp(2.3rem,5vw,4rem);margin:12px 0 15px}.sub{color:var(--muted);font-size:1rem}
+.glass{background:var(--glass);border:1px solid var(--line);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);box-shadow:0 18px 50px #0002}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.info-card{border-radius:24px;padding:25px;transition:.3s;position:relative;overflow:hidden}.info-card:hover{transform:translateY(-7px);background:#ffffff17}.icon3d{height:74px;width:74px;border-radius:22px;display:grid;place-items:center;margin-bottom:18px;background:linear-gradient(145deg,#f6dfa7,#a97831);box-shadow:inset 3px 3px 7px #fff9,inset -5px -6px 10px #72501c66,0 12px 22px #0004;color:#1a2436;font-size:2rem;text-shadow:0 2px 0 #fff8}
+.info-card h3{font-size:1.45rem;margin:0 0 10px}.info-card p{margin:0;color:var(--muted);font-size:.94rem}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:center}
+.photo-stack{position:relative;min-height:390px;perspective:900px}.photo-main{position:absolute;inset:0 42px 20px 0;border-radius:28px;overflow:hidden;transform:rotateY(8deg) rotateX(2deg);box-shadow:0 30px 65px #0006;border:1px solid #ffffff44}.photo-main img{width:100%;height:100%;object-fit:cover}.photo-mini{position:absolute;right:0;bottom:0;width:43%;height:48%;border-radius:22px;overflow:hidden;border:5px solid #15223a;box-shadow:0 20px 45px #0007;transform:rotateY(-8deg)}.photo-mini img{width:100%;height:100%;object-fit:cover}
+.text-block h2{font-size:clamp(2.2rem,4vw,3.5rem);margin:12px 0 20px}.text-block p{color:var(--muted)}
+.pill{display:inline-block;margin:7px 7px 0 0;padding:8px 13px;border:1px solid var(--line);border-radius:999px;background:#ffffff0c;color:#e9d6ae;font-size:.82rem}
+.quote{padding:38px;border-radius:28px;text-align:center;font:clamp(1.4rem,3vw,2.3rem)/1.35 "Playfair Display",serif;color:#f7e5bd}.quote small{display:block;margin-top:17px;font: .72rem "DM Sans",sans-serif;letter-spacing:.2em;color:#c4cbd7}
+.sacraments{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.sac{padding:20px 14px;border-radius:19px;text-align:center}.sac b{display:block;color:#f2d69e;margin-bottom:5px}.sac span{font-size:.8rem;color:var(--muted)}
+.mission{border-radius:28px;padding:36px;display:grid;grid-template-columns:1fr auto;gap:25px;align-items:center}.mission h2{font-size:2.5rem;margin:8px 0}.mission p{color:var(--muted);max-width:700px}
+footer{border-top:1px solid var(--line);padding:35px 0 45px;color:#aeb8c8;font-size:.83rem}.footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:800px){.links{gap:12px;font-size:.75rem}.hero-grid,.split{grid-template-columns:1fr}.hero{padding-top:145px}.visual{min-height:440px}.church-card{height:390px}.grid{grid-template-columns:1fr}.sacraments{grid-template-columns:repeat(2,1fr)}.photo-stack{min-height:330px}.mission{grid-template-columns:1fr}}
+@media(max-width:520px){.nav{align-items:flex-start;flex-direction:column;gap:9px}.links{width:100%;overflow-x:auto;white-space:nowrap;padding-bottom:3px}.hero{min-height:auto;padding-bottom:55px}.visual{min-height:370px}.church-card{height:330px}.chip-one{right:0;top:15px}.chip-two{left:0;bottom:10px}.section{padding:65px 0}.wrap{width:min(100% - 30px,1160px)}}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a class="logo" href="#inicio">FÉ<span>.</span>CATÓLICA</a>
+  <div class="links"><a href="#sobre">Sobre</a><a href="#historia">História</a><a href="#crencas">Crenças</a><a href="#sacramentos">Sacramentos</a><a href="#missao">Missão</a></div>
+</nav>
+<header class="hero wrap" id="inicio">
+  <div class="hero-grid">
+    <div>
+      <div class="kicker">Um caminho de fé e conhecimento</div>
+      <h1>Uma história de <em>fé</em> que atravessa gerações.</h1>
+      <p class="intro">Descubra a Igreja Católica: sua origem, seus ensinamentos, suas celebrações e sua missão de anunciar o Evangelho e servir ao próximo.</p>
+      <div class="actions"><a class="btn primary" href="#sobre">Explorar conteúdo ↗</a><a class="btn" href="#sacramentos">Conhecer os sacramentos</a></div>
+    </div>
+    <div class="visual">
+      <div class="glow"></div>
+      <div class="church-card">
+        <img src="https://images.unsplash.com/photo-1548625361-ec8539c5b6c5?auto=format&fit=crop&w=1100&q=90" alt="Interior de uma igreja com luz atravessando os vitrais">
+        <div class="card-caption"><small>Fé • Tradição • Comunidade</small><h3>A beleza da fé</h3></div>
+      </div>
+      <div class="float-chip chip-one">✦ Tradição viva</div><div class="float-chip chip-two">✝ Desde os primeiros cristãos</div>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+<section class="section" id="sobre">
+  <div class="section-head"><div class="kicker">01 / Introdução</div><h2>O que é a Igreja Católica?</h2><p class="sub">A Igreja Católica é uma comunidade cristã que tem Jesus Cristo como centro de sua fé. “Católica” vem do grego e significa “universal”, indicando uma Igreja aberta a todos os povos.</p></div>
+  <div class="grid">
+    <article class="info-card glass"><div class="icon3d">✝</div><h3>Jesus Cristo</h3><p>Os católicos creem em Jesus como Filho de Deus e Salvador, e procuram viver seus ensinamentos de amor, perdão e justiça.</p></article>
+    <article class="info-card glass"><div class="icon3d">◈</div><h3>Comunidade</h3><p>Fiéis se reúnem para rezar, celebrar, aprender e colocar em prática a solidariedade e o cuidado com o próximo.</p></article>
+    <article class="info-card glass"><div class="icon3d">✧</div><h3>Tradição</h3><p>A fé é transmitida pela Sagrada Escritura, pela Tradição e pelo ensinamento da Igreja ao longo dos séculos.</p></article>
+  </div>
+</section>
+<section class="section split" id="historia">
+  <div class="photo-stack">
+    <div class="photo-main"><img src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1000&q=90" alt="Arquitetura de uma igreja histórica"></div>
+    <div class="photo-mini"><img src="https://images.unsplash.com/photo-1514894780887-121968d00567?auto=format&fit=crop&w=700&q=85" alt="Detalhe de vitral colorido"></div>
+  </div>
+  <div class="text-block"><div class="kicker">02 / História</div><h2>Raízes que atravessam os séculos.</h2><p>A Igreja surgiu no contexto dos primeiros seguidores de Jesus, no século I. Os apóstolos anunciaram sua mensagem e formaram as primeiras comunidades cristãs.</p><p>Com o passar dos séculos, o cristianismo se espalhou pelo mundo e influenciou a arte, a música, a arquitetura, a educação e diversas ações sociais.</p><p>O papa, bispo de Roma, é reconhecido pelos católicos como sucessor de São Pedro e sinal de unidade da Igreja.</p><span class="pill">Século I</span><span class="pill">Apóstolos</span><span class="pill">Tradição cristã</span></div>
+</section>
+<section class="section" id="crencas">
+  <div class="section-head"><div class="kicker">03 / Fundamentos</div><h2>No que os católicos acreditam?</h2><p class="sub">A fé católica professa a existência de um só Deus e a Santíssima Trindade: Pai, Filho e Espírito Santo.</p></div>
+  <div class="grid">
+    <article class="info-card glass"><div class="icon3d">▤</div><h3>A Bíblia</h3><p>É a Sagrada Escritura, composta pelos livros do Antigo e do Novo Testamento, considerada Palavra de Deus.</p></article>
+    <article class="info-card glass"><div class="icon3d">☼</div><h3>A oração</h3><p>É uma forma de diálogo com Deus, realizada individualmente ou em comunidade, em silêncio ou por orações tradicionais.</p></article>
+    <article class="info-card glass"><div class="icon3d">♡</div><h3>Maria e os santos</h3><p>Maria é venerada como mãe de Jesus. Os santos são lembrados como exemplos de fé e de vida cristã.</p></article>
+  </div>
+</section>
+<div class="quote glass">“Amarás o teu próximo como a ti mesmo.”<small>MATEUS 22,39 • ENSINAMENTO DE JESUS</small></div>
+<section class="section" id="sacramentos">
+  <div class="section-head"><div class="kicker">04 / Vida sacramental</div><h2>Os sete sacramentos.</h2><p class="sub">Para a Igreja Católica, os sacramentos são sinais sagrados da graça de Deus e acompanham diferentes momentos da vida cristã.</p></div>
+  <div class="sacraments">
+    <div class="sac glass"><b>01 · Batismo</b><span>Entrada na vida cristã</span></div><div class="sac glass"><b>02 · Confirmação</b><span>Fortalecimento da fé</span></div>
+    <div class="sac glass"><b>03 · Eucaristia</b><span>Comunhão com Cristo</span></div><div class="sac glass"><b>04 · Penitência</b><span>Reconciliação</span></div>
+    <div class="sac glass"><b>05 · Unção dos Enfermos</b><span>Conforto e força</span></div><div class="sac glass"><b>06 · Ordem</b><span>Serviço ministerial</span></div>
+    <div class="sac glass"><b>07 · Matrimônio</b><span>Aliança matrimonial</span></div>
+  </div>
+</section>
+<section class="section split">
+  <div class="text-block"><div class="kicker">05 / Celebrações</div><h2>A vida da Igreja acontece em comunidade.</h2><p>A Missa é a principal celebração litúrgica católica. Nela, a comunidade escuta a Palavra de Deus e celebra a Eucaristia.</p><p>O ano litúrgico organiza as celebrações em tempos como Advento, Natal, Quaresma, Semana Santa e Tempo Pascal.</p></div>
+  <div class="photo-stack"><div class="photo-main"><img src="https://images.unsplash.com/photo-1478147427282-58a87a120781?auto=format&fit=crop&w=1000&q=90" alt="Interior de igreja iluminada para uma celebração"></div><div class="photo-mini"><img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=700&q=85" alt="Céu estrelado simbolizando contemplação"></div></div>
+</section>
+<section class="section" id="missao">
+  <div class="mission glass"><div><div class="kicker">06 / Missão</div><h2>Fé que se transforma em atitude.</h2><p>A missão da Igreja inclui anunciar o Evangelho e colocar em prática valores como solidariedade, dignidade humana, paz, acolhimento e cuidado com quem mais precisa. Paróquias e pastorais desenvolvem ações de caridade, educação e apoio às comunidades.</p></div><div class="icon3d" style="width:90px;height:90px;font-size:2.5rem">♡</div></div>
+</section>
+</main>
+<footer><div class="wrap footer-row"><span><strong style="color:#e2c17d">FÉ.CATÓLICA</strong> — Um guia introdutório sobre a Igreja Católica.</span><span>Conteúdo educativo • Consulte a Bíblia e o Catecismo para aprofundar seus estudos.</span></div></footer>
+</body></html>
